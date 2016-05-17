@@ -1,0 +1,8 @@
+We first gathered sound samples for the extremes on the vowel triangle ('aah', 'ooh', and 'eee'). We recorded each of these vowels with different emotions (neutral, sad, angry, and excited). We then gathered unvoiced sounds(sss, fff, and our breath). In addition, we also gathered a variety of implosive sounds. 
+
+We then proceeded to open these sound files up in Wavesurfer. For sake of consistency, we had the software sample at a rate of 11025kHz such that it would only read frequencies up to ~5500kHz (sampling theory // Nyquist rate). 
+
+To get a good idea of how the spectrograms vary for these sound files, we compared them against each other (aah neutral vs aah angry, aah neutral vs ooh neutral, etc in that fashion). We wanted to focus on the differences in the harmonics and the formants. To do this, for each pairing (i.e. aah neutral vs aah angry) I took a snapshot of the differences when we had a narrow sampling window (for better view of the formants) and a wide sampling window (for better view of the harmonics). 
+
+An alternate way for us to look at the differences between these pairs was for us to simply look at the magnitude spectrum of the spectrograms. If we looked at the spectrum section plot under the "FFT analysis" mode, we could easily distinguish the harmonics as the peaks of the graph. If we wanted to see the formants, we changed the mode to "LPC analysis" and likewise, the peaks determined the formants. 
+**We experimented a bit and concluded that setting the number of FFT points to 4096 and the Pre-emphasis value to 0.97 yielded the clearest results. For consistency, we did this for every plot that we graphed. 
